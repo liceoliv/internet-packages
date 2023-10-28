@@ -7,6 +7,8 @@
     --cor-hover-color: #049DD9;
     --cor-hover-back: #9A80BF;
     --cor-btn: #734EA6;
+    --cor-branco: #FFFFFF;
+    --cor-recommended: #65FFAA;
 }
 
 /* Reset */
@@ -141,4 +143,197 @@ nav{
 
 .services-container p{
     line-height: 24px;
+}
+
+/* Preços e Planos */
+.pricing-container{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing-container h2{
+    font-size: 32px;
+}
+
+.pricing-container p{
+    font-size: 20px;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan{
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan ul{
+    padding: 1px;
+}
+.plan li{
+    list-style: none;
+    height: 90px;
+    line-height: 45px;
+    background-color: var(--cor-navbar);
+    color: var(--cor-branco);
+}
+
+.plan .price{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 120px;
+    background-color: var(--cor-link);
+    color: var(--cor-navbar);
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-navbar);
+    background-color: var(--cor-btn);
+    padding: 50px 0;
+}
+
+.plan .plan-btn{
+    background-color: var(--cor-btn);
+    color: var(--cor-link);
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+.plan .plan-btn:hover{
+    background-color: var(--cor-hover-back);
+    color: var(--cor-link-hover);
+}
+.plan .recommended{
+    background-color: var(--cor-recommended);
+}
+
+/* Local */
+.local{
+    background-image: url("imagem/terra.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 11rem 0;
+}
+.local h2{
+    text-align: center;
+    color: var(--cor-branco);
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+.local p{
+    text-align: center;
+    color: var(--cor-branco);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.local input{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.local input[type="text"]{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.local input[type="submit"]{
+    background-color: var(--cor-btn);
+    color: var(--cor-link);
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.local input[type="submit"]:hover{
+    background-color: var(--cor-hover-back);
+    color: var(--cor-link-hover);
+}
+
+/* Contato */
+.contato{
+    padding: 7rem 0 5rem 0;
+    text-align: center;
+    background-color: var(--cor-navbar);
+}
+.contato h2{
+    color: var(--cor-link);
+    margin-bottom: 15px;
+    font-size: 34px;
+}
+.contato p{
+    color: var(--cor-link);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.contato input,
+.contato textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-link);
+    margin: 0 10px 20px;
+}
+
+.contato textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contato input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: var(--cor-btn);
+    color: var(--cor-link);
+    cursor: pointer;
+}
+.contato input[type="submit"]:hover{
+    background-color: var(--cor-hover-back);
+    color: var(--cor-link-hover);
+    border: var(--cor-link-hover);
+}
+
+/* Rodapé */
+footer{
+    padding: 1rem;
+    background-color: var(--cor-link);
+    color: var(--cor-navbar);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsividede */
+/* small laptops 1100px+ */
+@media (max-width:1100px){
+    .plans-container{
+        width: 92%;
+    }
+    .plan{
+        margin: 0 4px;
+    }
+    .plan li{
+        padding: 3px;
+    }
 }
